@@ -35,10 +35,29 @@
 
 You can download [**Repository**](https://github.com/FreddyWhest/VertusBot) by cloning it to your system and installing the necessary dependencies:
 
-```shell
-~ >>> git clone https://github.com/FreddyWhest/VertusBot.git
-~ >>> cd VertusBot
-
+Step In termux
+~ >>> 
+```bash
+git clone https://github.com/kaguya/VertusBot.git
+cd VertusBot
+npm install --ignore-scripts
+npm audit fix 
+``` 
+edit API ID HASH
+```bash
+cp .env-example .env
+nano .env
+```
+add true in the section USE_QUERY_ID=true
+if you want to use query
+simpan querymu di
+```bash
+nano queryIds.json
+```
+Run bot
+```bash
+node index.js
+```
 #Linux and MocOS
 ~/VertusBot >>> chmod +x check_node.sh
 ~/VertusBot >>> ./check_node.sh
